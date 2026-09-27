@@ -51,6 +51,18 @@ CH1 CH3</textarea>
         <h3>频段清单</h3>
         <ul id="bands"></ul>
         <p id="verification"></p>
+        <div class="audit-entry">
+          <button id="audit" type="button" disabled>复用判别树审计（≤7 通道）</button>
+          <span id="auditHint" class="examples"></span>
+        </div>
+      </section>
+
+      <section class="panel" id="auditPanel" hidden>
+        <h2>复用判别树审计</h2>
+        <p id="auditStale" class="stale" hidden>输入或结论已变更，以下审计已失效，请重新发起。</p>
+        <p id="auditSummary" class="summary"></p>
+        <p id="auditMeta"></p>
+        <div id="auditTree" class="tree"></div>
       </section>
     </main>
     <script src="validate.js"></script>
