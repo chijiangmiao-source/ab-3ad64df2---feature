@@ -51,9 +51,25 @@ CH1 CH3</textarea>
         <h3>频段清单</h3>
         <ul id="bands"></ul>
         <p id="verification"></p>
+        <div class="actions">
+          <button id="audit" type="button" disabled>发起复用判别树审计（至多 7 个通道）</button>
+        </div>
+        <p id="auditStatus" role="status"></p>
+      </section>
+
+      <section class="panel" id="auditPanel" hidden>
+        <h2>复用判别树审计</h2>
+        <p id="auditSummary" class="summary"></p>
+        <p id="auditExplain" class="muted-text">
+          每次现场测量比较一对通道「是否被分到同一频段」；沿树回答「相同 / 不同」，
+          最坏情况下以最少测量次数唯一确定最优频段划分。
+        </p>
+        <div id="auditTree"></div>
       </section>
     </main>
     <script src="validate.js"></script>
+    <script src="dsatur.js"></script>
+    <script src="audit.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

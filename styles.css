@@ -126,3 +126,59 @@ td {
 .error-text {
   color: #b3261e;
 }
+.muted-text {
+  color: #667085;
+  font-size: 0.9rem;
+}
+#auditStatus.busy {
+  color: #0b5cad;
+}
+#auditStatus.ok {
+  color: #146c2e;
+}
+#auditStatus.error {
+  color: #b3261e;
+}
+.audit-branch {
+  border-left: 3px solid #16324f;
+  margin: 0.5rem 0 0.5rem 0.4rem;
+  padding-left: 0.8rem;
+}
+.audit-ask {
+  margin: 0.3rem 0;
+  font-weight: 600;
+}
+.audit-children {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0.3rem 0;
+}
+.audit-children details {
+  border: 1px solid #dde3ea;
+  border-radius: 6px;
+  padding: 0.35rem 0.6rem;
+  background: #f8fafc;
+}
+.audit-children summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.audit-leaf {
+  border: 1px solid #9ec4a8;
+  background: #f1f8f2;
+  border-radius: 6px;
+  padding: 0.5rem 0.8rem;
+  margin: 0.3rem 0;
+}
+.audit-leaf-title {
+  font-weight: 700;
+  color: #146c2e;
+  margin: 0.2rem 0;
+}
+.audit-evidence {
+  margin: 0.3rem 0;
+  color: #344054;
+}
+.audit-check {
+  margin: 0.3rem 0 0.2rem;
+}
